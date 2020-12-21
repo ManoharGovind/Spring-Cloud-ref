@@ -1,0 +1,15 @@
+package com.practice.springcloud.controllers;
+
+@RestController
+@RequestMapping("/productapi")
+public class ProductController {
+	
+	@Autowired
+	ProductRepo repoo;
+	
+	@PostMapping("/createproduct")
+	public product createproduct(@RequestBody product item) {
+		return repoo.save(item);
+	}
+}
+
