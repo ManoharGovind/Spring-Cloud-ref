@@ -1,5 +1,0 @@
-package com.practice.springcloud.controllers;
-
-public class ProductController {
-
-}
